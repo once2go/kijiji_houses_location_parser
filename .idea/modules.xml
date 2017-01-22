@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/KijijiHomeParser.iml" filepath="$PROJECT_DIR$/.idea/modules/KijijiHomeParser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/KijijiHomeParser_main.iml" filepath="$PROJECT_DIR$/.idea/modules/KijijiHomeParser_main.iml" group="KijijiHomeParser" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/KijijiHomeParser_test.iml" filepath="$PROJECT_DIR$/.idea/modules/KijijiHomeParser_test.iml" group="KijijiHomeParser" />
+    </modules>
+  </component>
+</project>
