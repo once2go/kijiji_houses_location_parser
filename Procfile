@@ -1,1 +1,1 @@
-web: build/install/gradle-getting-started/bin/KijijiHomeParser
+web: build/install/KijijiHomeParser/bin/KijijiHomeParser
