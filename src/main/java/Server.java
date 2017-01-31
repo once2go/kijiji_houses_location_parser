@@ -14,7 +14,7 @@ public class Server {
 
 
     public void init() throws Exception {
-
+        port(Integer.valueOf(System.getenv("PORT")));
         FreeMarkerEngine freeMarkerEngine = new FreeMarkerEngine();
         Configuration freeMarkerConfiguration = new Configuration();
         freeMarkerConfiguration.setTemplateLoader(new ClassTemplateLoader(Server.class, "/web/"));
