@@ -2,50 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d287507d-9721-464e-8432-022abfe2f725" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sparkjava_spark_core_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sparkjava_spark_template_freemarker_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_servlet_javax_servlet_api_3_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_jetty_jetty_http_9_3_2_v20150730.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_jetty_jetty_io_9_3_2_v20150730.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_jetty_jetty_security_9_3_2_v20150730.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_jetty_jetty_server_9_3_2_v20150730.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_jetty_jetty_servlet_9_3_2_v20150730.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_jetty_jetty_util_9_3_2_v20150730.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_jetty_jetty_webapp_9_3_2_v20150730.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_jetty_jetty_xml_9_3_2_v20150730.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_jetty_websocket_websocket_api_9_3_2_v20150730.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_jetty_websocket_websocket_client_9_3_2_v20150730.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_jetty_websocket_websocket_common_9_3_2_v20150730.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_jetty_websocket_websocket_server_9_3_2_v20150730.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_jetty_websocket_websocket_servlet_9_3_2_v20150730.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_freemarker_freemarker_2_3_19.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_api_1_7_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_simple_1_7_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Server.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/view/MainView.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/view/MainView.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/Application$1.class" afterPath="$PROJECT_DIR$/build/classes/main/Application$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/Application.class" afterPath="$PROJECT_DIR$/build/classes/main/Application.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/data/FitAddObject.class" afterPath="$PROJECT_DIR$/build/classes/main/data/FitAddObject.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/data/FitElement.class" afterPath="$PROJECT_DIR$/build/classes/main/data/FitElement.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/data/KiConfig.class" afterPath="$PROJECT_DIR$/build/classes/main/data/KiConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/data/Location.class" afterPath="$PROJECT_DIR$/build/classes/main/data/Location.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/presenter/Agent.class" afterPath="$PROJECT_DIR$/build/classes/main/presenter/Agent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/presenter/AgentTask.class" afterPath="$PROJECT_DIR$/build/classes/main/presenter/AgentTask.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/presenter/Executor$ExecutorProgress.class" afterPath="$PROJECT_DIR$/build/classes/main/presenter/Executor$ExecutorProgress.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/presenter/Executor.class" afterPath="$PROJECT_DIR$/build/classes/main/presenter/Executor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/presenter/HouseAndCondosAgent.class" afterPath="$PROJECT_DIR$/build/classes/main/presenter/HouseAndCondosAgent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/presenter/LocationMatcher.class" afterPath="$PROJECT_DIR$/build/classes/main/presenter/LocationMatcher.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/presenter/TaskResultListener.class" afterPath="$PROJECT_DIR$/build/classes/main/presenter/TaskResultListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/presenter/UrlHelper$UrlBuilder.class" afterPath="$PROJECT_DIR$/build/classes/main/presenter/UrlHelper$UrlBuilder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/presenter/UrlHelper.class" afterPath="$PROJECT_DIR$/build/classes/main/presenter/UrlHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/KijijiHomeParser_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/KijijiHomeParser_main.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/KijijiHomeParser_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/KijijiHomeParser_test.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Application.java" afterPath="$PROJECT_DIR$/src/main/java/Application.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/data/KiConfig.java" afterPath="$PROJECT_DIR$/src/main/java/data/KiConfig.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -102,8 +59,8 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+            <state relative-caret-position="288">
+              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -854,7 +811,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="219" y="72" width="1547" height="818" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1398,8 +1355,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        <state relative-caret-position="288">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>
