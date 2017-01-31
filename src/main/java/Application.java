@@ -15,7 +15,12 @@ import java.util.List;
 public class Application {
 
     public static void main(String[] args) {
-        proceedSearch();
+        try {
+            new Server().init();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        //proceedSearch();
     }
 
     private static void proceedSearch() {
@@ -49,7 +54,7 @@ public class Application {
     private static String buildStubUrl() {
         UrlHelper.UrlBuilder builder = new UrlHelper.UrlBuilder(KiConfig.SERVER_URL, KiConfig.CAT_HOUSES, KiConfig.AREA_GTA, KiConfig.TOKEN);
         builder.addQuery(KiConfig.QUERY_OFFERING)
-                .addQuery(UrlHelper.buildQueryPriceParameter(KiConfig.QUERY_PRICE_FORMAT, 1000, 2000));
+                .addQuery(UrlHelper.buildQueryPriceParameter(KiConfig.QUERY_PRICE_FORMAT, 1500, 2000));
         return builder.build();
     }
 

@@ -1,0 +1,6 @@
+{
+  "name": "Kijiji home parser",
+  "description": "Kijiji home parser with location",
+  "image": "heroku/gradle",
+  "addons": [ "heroku-postgresql" ]
+}

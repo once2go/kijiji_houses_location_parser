@@ -17,8 +17,16 @@ public class KiConfig {
     public static String QUERY_FOR_RENT_BY_OWNER = "for-rent-by=ownr";
 
 
-    public static double LAT_START = 43.681872;
-    public static double LAT_END = 43.702695;
-    public static double LON_START = -79.328156;
-    public static double LON_END = -79.287593;
+
+   // main street, danford, victoria park
+//    public static double LAT_START = 43.681872;
+//    public static double LAT_END = 43.702695;
+//    public static double LON_START = -79.328156;
+//    public static double LON_END = -79.287593;
+
+// kenedy and blue line zone
+    public static double LAT_START = 43.719537;
+    public static double LAT_END = 43.781840;
+    public static double LON_START = -79.321688;
+    public static double LON_END = -79.233601;
 }
