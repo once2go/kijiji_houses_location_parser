@@ -47,6 +47,9 @@ public class HouseAndCondosAgent implements Agent {
             e.printStackTrace();
         }
         Element body = doc.body();
+        Element head = body.getElementsByClass("layout-0").first();
+        head = head.select("h1").first();
+        String title = head.text();
         Element paramTable = body.getElementsByClass("ad-attributes").first();
         Elements rows = paramTable.select("tr");
         String date = null;
@@ -93,6 +96,6 @@ public class HouseAndCondosAgent implements Agent {
         }
         Location location = new Location(isPostalCode, lat, lon);
 
-        return new FitAddObject(element, date, addr, price, isFurnished, description, location);
+        return new FitAddObject(element, title, date, price, addr, isFurnished, description, location);
     }
 }

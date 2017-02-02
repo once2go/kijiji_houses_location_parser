@@ -12,8 +12,9 @@ public class FitAddObject {
     private boolean furnished;
     private String description;
     private String price;
+    private String title;
 
-    public FitAddObject(FitElement fitElement, String date, String price, String address,
+    public FitAddObject(FitElement fitElement, String title, String date, String price, String address,
                         boolean furnished, String description, Location location) {
         this.date = date;
         this.address = address;
@@ -22,6 +23,7 @@ public class FitAddObject {
         this.furnished = furnished;
         this.description = description;
         this.price = price;
+        this.title = title;
     }
 
     public String getDate() {
@@ -51,6 +53,10 @@ public class FitAddObject {
 
     public String getPrice() {
         return price;
+    }
+
+    public String getTitle() {
+        return title;
     }
 
     @Override

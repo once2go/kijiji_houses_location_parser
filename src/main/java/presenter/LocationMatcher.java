@@ -1,22 +1,22 @@
 package presenter;
 
-import data.KiConfig;
 import data.Location;
+import data.SearchingZone;
 
 /**
  * Created by once2go on 20/01/17.
  */
 public class LocationMatcher {
 
-    public static boolean isInMatchedZone(Location location) {
-        return isMatchedInLatitude(location.getLat()) && isMatchedInLongitude(location.getLon());
+    public static boolean isInMatchedZone(SearchingZone searchingZone, Location location) {
+        return isMatchedInLatitude(searchingZone, location.getLat()) && isMatchedInLongitude(searchingZone, location.getLon());
     }
 
-    private static boolean isMatchedInLatitude(double latitude) {
-        return (KiConfig.LAT_END >= latitude) && (latitude > KiConfig.LAT_START);
+    private static boolean isMatchedInLatitude(SearchingZone searchingZone, double latitude) {
+        return (searchingZone.getLatitudeEnd() >= latitude) && (latitude > searchingZone.getLatitudeStart());
     }
 
-    private static boolean isMatchedInLongitude(double longitude) {
-        return (longitude <= KiConfig.LON_END ) && (longitude > KiConfig.LON_START);
+    private static boolean isMatchedInLongitude(SearchingZone searchingZone, double longitude) {
+        return (longitude <= searchingZone.getLongitudeEnd()) && (longitude > searchingZone.getLongitudeStart());
     }
 }

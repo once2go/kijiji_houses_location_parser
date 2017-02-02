@@ -2,41 +2,53 @@ package presenter;
 
 import data.FitAddObject;
 import data.FitElement;
+import data.SearchingZone;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by once2go on 20/01/17.
  */
 public class Executor implements TaskResultListener {
 
-    private final List<FitAddObject> matchedList = new ArrayList<FitAddObject>();
+    private final List<FitAddObject> matchedList = new ArrayList<>();
     private ExecutorProgress listener;
+    private SearchingZone mSearchingZone;
 
-    public interface ExecutorProgress {
-        void onProceeded(FitAddObject result);
+    Executor(SearchingZone searchingZone) {
+        mSearchingZone = searchingZone;
     }
 
-    public void setExecutorProgressListener(ExecutorProgress listener) {
+    public interface ExecutorProgress {
+        void onProceeded(List<FitAddObject> result);
+    }
+
+    void setExecutorProgressListener(ExecutorProgress listener) {
         this.listener = listener;
     }
 
-    public void executeNewSearch(FitElement fitElement) {
-        Thread parseThread = new Thread(new AgentTask(fitElement, this));
-        parseThread.start();
-    }
-
-    public void onParseFinished(FitAddObject result) {
-        synchronized (matchedList) {
-            matchedList.add(result);
-            if (listener != null) {
-                listener.onProceeded(result);
-            }
+    void executeNewSearch(List<FitElement> fitElement) throws InterruptedException {
+        ExecutorService executorService = Executors.newCachedThreadPool();
+        for (FitElement element : fitElement) {
+            Thread parseThread = new Thread(new AgentTask(mSearchingZone, element, this));
+            executorService.execute(parseThread);
+        }
+        executorService.shutdown();
+        boolean finished = executorService.awaitTermination(1, TimeUnit.MINUTES);
+        if (finished && listener != null) {
+            listener.onProceeded(matchedList);
         }
     }
 
-    public List<FitAddObject> getMatchedList() {
-        return matchedList;
+    @Override
+    public void onParseFinished(FitAddObject result) {
+        synchronized (matchedList) {
+            matchedList.add(result);
+        }
     }
 }
+
