@@ -25,7 +25,7 @@
   </div>
   <div class="col-md-6">
   	  	<div class="input-group">
-	  	 <span class="input-group-addon">Till</span> 
+	  	 <span class="input-group-addon">To</span> 
 	 	 <input id="price_till" type="text" class="form-control" value="2000" aria-label="Amount (to the nearest dollar)">
   	 	 <span class="input-group-addon">c$</span>
 	</div>

@@ -22,14 +22,18 @@ $( document ).ready(function() {
         success: function (response) {
            	  $btn.button('reset')
            	  $("#progress_bar").hide();
-           	  if (checkJSON(response)) {
+           	  if (checkJSON(response)) { 
            	  	   var data = $.parseJSON(response);
-	                $.each(data, function(key, item) {
+           	  	   if($.isEmptyObject(data)) {
+           	  	   		$("#result_list").append('<li class="list-group-item list-group-item-info">No matches</li>')
+           	  	   } else {
+           	  	   	$.each(data, function(key, item) {
 	              	$("#result_list").append('<a target="_blank" href="'+item.link+'"class="list-group-item list-group-item-success">'
 	              		+item.title+'<span class="badge">' + item.price + '</span></a>');
-	    		  });
+	    		  	});
+           	  	 }
            	  } else {
-           	  		alert(response)
+           	  		$("#result_list").append('<li class="list-group-item list-group-item-warning">'+response+'</li>')
            	  }
         },
         error: function(jqXHR, textStatus, errorThrown) {
