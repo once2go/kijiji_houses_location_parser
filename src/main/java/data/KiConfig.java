@@ -7,10 +7,13 @@ public class KiConfig {
     public static String SERVER_URL = "http://www.kijiji.ca";
     public static String CAT_APARTMENTS_CONDOS = "b-apartments-condos";
     public static String CAT_HOUSES = "b-house-rental";
+    public static String CAT_ROOMS = "b-room-rental-roommate";
 
     public static String AREA_GTA = "city-of-toronto";
 
-    public static String TOKEN = "c43l1700273";
+    public static String TOKEN_HOUSES = "c43l1700273";
+    public static String TOKEN_CONDOS = "c37l1700272";
+    public static String TOKEN_ROOMS = "c36l1700272";
 
     public static String QUERY_OFFERING = "ad=offering";
     public static String QUERY_PRICE_FORMAT = "price=%d__%d";

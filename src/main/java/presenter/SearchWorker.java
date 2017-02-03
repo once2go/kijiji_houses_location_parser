@@ -19,16 +19,23 @@ public class SearchWorker implements Runnable {
 
     public SearchWorker(RequestData requestData) {
         String searchTypeQuery;
+        String searchToken;
         switch (requestData.getSearchType()) {
             case HOUSES:
                 searchTypeQuery = KiConfig.CAT_HOUSES;
+                searchToken = KiConfig.TOKEN_HOUSES;
+                break;
+            case ROOMS:
+                searchTypeQuery = KiConfig.CAT_ROOMS;
+                searchToken = KiConfig.TOKEN_ROOMS;
                 break;
             default:
                 searchTypeQuery = KiConfig.CAT_APARTMENTS_CONDOS;
+                searchToken = KiConfig.TOKEN_CONDOS;
         }
         int startPrice = requestData.getPriceStartFrom();
         int endPrice = requestData.getPriceStartTill();
-        UrlHelper.UrlBuilder builder = new UrlHelper.UrlBuilder(KiConfig.SERVER_URL, searchTypeQuery, KiConfig.AREA_GTA, KiConfig.TOKEN);
+        UrlHelper.UrlBuilder builder = new UrlHelper.UrlBuilder(KiConfig.SERVER_URL, searchTypeQuery, KiConfig.AREA_GTA, searchToken);
         builder.addQuery(KiConfig.QUERY_OFFERING)
                 .addQuery(UrlHelper.buildQueryPriceParameter(KiConfig.QUERY_PRICE_FORMAT, startPrice, endPrice));
         urlPattern = builder.build();

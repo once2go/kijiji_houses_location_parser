@@ -1,3 +1,5 @@
+<div class="block_input">
+
 <h4>Property type</h4>
 <div class="btn-group" data-toggle="buttons" id="search_option">
   <label class="btn btn-primary active">
@@ -6,7 +8,11 @@
   <label class="btn btn-primary">
     <input type="radio" name="options" value="houses" autocomplete="off">Houses
   </label>
+  <label class="btn btn-primary">
+    <input type="radio" name="options" value="rooms" autocomplete="off">Rooms
+  </label>
 </div>
+
 
 <h4>Price</h4>
 <div class="row">
@@ -55,16 +61,13 @@
   </div>
 </div>
 
-
-<button type="button" id="search" data-loading-text="Searching..." class="btn btn-primary" autocomplete="off">
-  Search
-</button>
-
-<div class="progress" id="progress_bar">
-  <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="45"aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-  </div>
+<div class="block_button">
+	<button type="button" id="search" data-loading-text="Searching..." class="btn btn-primary" autocomplete="off">
+  		Search
+	</button>
 </div>
 
+</div>
 <ul class="list-group" id="result_list"></ul>
 
 

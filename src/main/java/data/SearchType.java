@@ -6,6 +6,7 @@ package data;
 public enum SearchType {
 
     CONDOS("condos"),
+    ROOMS("rooms"),
     HOUSES("houses");
 
     private String mType;

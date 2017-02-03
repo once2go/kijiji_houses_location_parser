@@ -2,13 +2,10 @@ import com.google.gson.Gson;
 import data.RequestData;
 import freemarker.cache.ClassTemplateLoader;
 import freemarker.template.Configuration;
+import presenter.RequestValidator;
 import presenter.SearchWorker;
 import spark.ModelAndView;
-import spark.Request;
 import spark.template.freemarker.FreeMarkerEngine;
-
-import java.util.HashMap;
-import java.util.Map;
 
 import static spark.Spark.*;
 
@@ -33,6 +30,10 @@ public class Server {
 
         post("/", (request, response) -> {
             RequestData requestData = new Gson().fromJson(request.body(), RequestData.class);
+            String validationErrors = RequestValidator.validate(requestData);
+            if (validationErrors != null) {
+                return validationErrors;
+            }
             SearchWorker searchWorker = new SearchWorker(requestData);
             Thread wThread = new Thread(searchWorker);
             wThread.start();

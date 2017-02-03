@@ -2,7 +2,7 @@
   <div class="container">
     <ul class="nav navbar-nav">
       <li class="active">
-        <h3><span class="glyphicon glyphicon-home"></span>Home and condos search</h3>
+        <h3 style="color: #fff"><span class="glyphicon glyphicon-home"></span> Houses, condos and rooms search</h3>
       </li>
     </ul>
   </div>
