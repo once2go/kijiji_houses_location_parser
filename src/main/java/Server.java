@@ -41,14 +41,6 @@ public class Server {
             return new Gson().toJson(searchWorker.getResult());
         });
 
-//        get("/hello", (request, response) -> {
-//            response.status(200);
-//            response.type("text/html");
-//            Map<String, Object> attributes = new HashMap<>();
-//
-//            attributes.put("message", "Kijiji parser");
-//            return freeMarkerEngine.render(new ModelAndView(attributes, "index.ftl"));
-//        });
     }
 
 }

@@ -5,31 +5,47 @@ package data;
  */
 public class SearchingZone {
 
-    private double mLatitudeStart;
-    private double mLatitudeEnd;
-    private double mLongitudeStart;
-    private double mLongitudeEnd;
+    private String mLatitudeStart;
+    private String mLatitudeEnd;
+    private String mLongitudeStart;
+    private String mLongitudeEnd;
 
     public SearchingZone(String latitudeStart, String latitudeEnd, String longitudeStart, String longitudeEnd) {
-        mLatitudeStart = Double.parseDouble(latitudeStart);
-        mLatitudeEnd = Double.parseDouble(latitudeEnd);
-        mLongitudeStart = Double.parseDouble(longitudeStart);
-        mLongitudeEnd = Double.parseDouble(longitudeEnd);
+        mLatitudeStart = latitudeStart;
+        mLatitudeEnd = latitudeEnd;
+        mLongitudeStart = longitudeStart;
+        mLongitudeEnd = longitudeEnd;
     }
 
     public double getLatitudeStart() {
-        return mLatitudeStart;
+        try {
+            return Double.parseDouble(mLatitudeStart);
+        } catch (Exception e) {
+            return -1;
+        }
     }
 
     public double getLatitudeEnd() {
-        return mLatitudeEnd;
+        try {
+            return Double.parseDouble(mLatitudeEnd);
+        } catch (Exception e) {
+            return -1;
+        }
     }
 
     public double getLongitudeStart() {
-        return mLongitudeStart;
+        try {
+            return Double.parseDouble(mLongitudeStart);
+        } catch (Exception e) {
+            return -1;
+        }
     }
 
     public double getLongitudeEnd() {
-        return mLongitudeEnd;
+        try {
+            return Double.parseDouble(mLongitudeEnd);
+        } catch (Exception e) {
+            return -1;
+        }
     }
 }

@@ -34,11 +34,19 @@ public class RequestData {
     }
 
     public int getPriceStartFrom() {
-        return Integer.parseInt(mPriceStartFrom);
+        try {
+            return Integer.parseInt(mPriceStartFrom);
+        } catch (Exception e) {
+            return -1;
+        }
     }
 
     public int getPriceStartTill() {
-        return Integer.parseInt(mPriceStartTill);
+        try {
+            return Integer.parseInt(mPriceStartTill);
+        } catch (Exception e) {
+            return -1;
+        }
     }
 
     public SearchingZone getSearchingZone() {

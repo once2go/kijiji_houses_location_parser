@@ -12,12 +12,12 @@ $( document ).ready(function() {
         contentType : 'application/json',
         data: JSON.stringify({ 
         	"search_type": $('input[name=options]:checked', '#search_option').val(),
-        	"price_from": $('#price_from').val(),
-	        "price_till": $('#price_till').val(),
-	        "lat_start": $('#lat_start').val(),
-	        "lat_end": $('#lat_end').val(),
-	        "lon_start" : $('#lon_start').val(),
-	        "lon_end": $('#lon_end').val() 
+        	"price_from": $('#price_from').val().trim(),
+	        "price_till": $('#price_till').val().trim(),
+	        "lat_start": $('#lat_start').val().trim(),
+	        "lat_end": $('#lat_end').val().trim(),
+	        "lon_start" : $('#lon_start').val().trim(),
+	        "lon_end": $('#lon_end').val().trim() 
         	 }),
         success: function (response) {
            	  $btn.button('reset')
@@ -33,7 +33,12 @@ $( document ).ready(function() {
 	    		  	});
            	  	 }
            	  } else {
-           	  		$("#result_list").append('<li class="list-group-item list-group-item-warning">'+response+'</li>')
+           	  	var errorList = response.split(";");
+           	  	$.each(errorList, function(key, description) {
+           	  		if (description) {
+           	  			$("#result_list").append('<li class="list-group-item list-group-item-warning">'+description+'</li>')           	  			
+           	  		}
+           	  	});
            	  }
         },
         error: function(jqXHR, textStatus, errorThrown) {
