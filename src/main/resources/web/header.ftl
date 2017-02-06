@@ -3,7 +3,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="/style/main.css" />
-<script src="/js/script.js"></script>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
   (adsbygoogle = window.adsbygoogle || []).push({
@@ -19,5 +18,18 @@
 
   ga('create', 'UA-91358971-1', 'auto');
   ga('send', 'pageview');
-
 </script>
+
+<script src="https://www.gstatic.com/firebasejs/3.6.8/firebase.js"></script>
+<script>
+  var config = {
+    apiKey: "AIzaSyADqqXX-v_6W-94Q0cVOZ5rHQdg6Cye11o",
+    authDomain: "local-home.firebaseapp.com",
+    databaseURL: "https://local-home.firebaseio.com",
+    storageBucket: "local-home.appspot.com",
+    messagingSenderId: "1073864204507"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="/js/auth.js"></script>
+<script src="/js/script.js"></script>

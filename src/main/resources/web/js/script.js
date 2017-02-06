@@ -1,7 +1,5 @@
 $( document ).ready(function() {
-
 	$("#progress_bar").hide();
-
     $( "#search" ).click(function() {
     	$("#result_list").empty();
   		var $btn = $(this).button('loading');
