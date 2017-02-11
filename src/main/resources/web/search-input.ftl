@@ -3,13 +3,13 @@
 <h4>Property type</h4>
 <div class="btn-group" data-toggle="buttons" id="search_option">
   <label class="btn btn-primary active">
-    <input type="radio" name="options" value="rooms" autocomplete="off">Rooms
+    <input type="radio" name="options" value="rooms" checked>Rooms
   </label>
   <label class="btn btn-primary">
-    <input type="radio" name="options" value="condos" autocomplete="off" checked>Condos
+    <input type="radio" name="options" value="condos">Condos
   </label>
   <label class="btn btn-primary">
-    <input type="radio" name="options" value="houses" autocomplete="off">Houses
+    <input type="radio" name="options" value="houses">Houses
   </label>
 </div>
 
@@ -61,10 +61,14 @@
   </div>
 </div>
 
-<div class="block_button">
+<div class="block_button row">
+<div class="col-lg-6">
 	<button type="button" id="search" data-loading-text="Searching..." class="btn btn-primary" autocomplete="off">
   		Search
 	</button>
+</div>
+
+
 </div>
 
 </div>

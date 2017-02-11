@@ -8,10 +8,10 @@
 
 <ul class="nav navbar-nav navbar-right">
      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon glyphicon-user"></span> Hello, Guest <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="" onclick="sign_in_google()">SignIn with Google</a></li>
-            <li role="presentation" class="disabled"><a>SignIn with Facebook</a></li>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" id="user_name"><span class="glyphicon glyphicon-user"></span>Sign In<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" id="block_signin">
+	            <li><a onclick="sign_in_google()">Sign In with Google</a></li>
+	            <li role="presentation" class="disabled"><a>Sign In with Facebook</a></li>
           </ul>
       </li>
 	</ul>

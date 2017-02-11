@@ -1,3 +1,4 @@
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title>Locate better living place on Toronto</title>
 <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -22,6 +23,7 @@
 
 <script src="https://www.gstatic.com/firebasejs/3.6.8/firebase.js"></script>
 <script>
+  // Initialize Firebase
   var config = {
     apiKey: "AIzaSyADqqXX-v_6W-94Q0cVOZ5rHQdg6Cye11o",
     authDomain: "local-home.firebaseapp.com",
@@ -31,5 +33,6 @@
   };
   firebase.initializeApp(config);
 </script>
+<script src="/js/db.js"></script>
 <script src="/js/auth.js"></script>
 <script src="/js/script.js"></script>

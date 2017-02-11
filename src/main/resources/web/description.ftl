@@ -1,3 +1,5 @@
+<ul class="list-group" id="pressets"></ul>
+
 <div class="panel panel-info" style="margin-right: 2%; margin-left: 2%;">
   <div class="panel-body" style="text-align: center;">
     How to use it:
@@ -13,6 +15,12 @@
 	  <li>Click on the map to get cordinates of right|up corner of searching area.</li>
 	  <li>Fill the input fields where <span class="label label-default">End at X</span> will be your ended latitude and <span class="label label-default">End at Y</span>- ended longitude</li>
 	  <li>Searching may take up to 60 seconds, its depends on your searching paramenters</li>
+	</ul>
+	<p></p>
+	<ul class="descriptions_list">
+	  <li><span class="label label-success">Signed user</span> have ability save serching parameters for reuse it in future </li>
+	  <li><span class="label label-success">Signed user</span> results more wide</li>
+	  <li>If you have an idea hove to improve service send feedback (for signed users)</li>
 	</ul> 
 	<div class="block_image_description">
 		<img src="/images/exmple.png" alt="Google maps location example" style="width:75%;height:75%;"> 

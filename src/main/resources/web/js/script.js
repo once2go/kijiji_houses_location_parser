@@ -7,6 +7,7 @@ $( document ).ready(function() {
 	    $.ajax({
         url: "/",
         type: "POST",
+        headers: { 'x-u-auth': window.localStorage.getItem("lc_home_uid") },
         contentType : 'application/json',
         data: JSON.stringify({ 
         	"search_type": $('input[name=options]:checked', '#search_option').val(),
@@ -46,7 +47,13 @@ $( document ).ready(function() {
         }
        });	
 	});
+
+    $("#feedback-send-btn").click(function() {
+      sendFeedBack($("#feedback-msg").val())
+      $('#fback-modal').modal('hide');
+    });
 });
+
 
 var checkJSON = function(m) {
 

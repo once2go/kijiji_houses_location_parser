@@ -1,7 +1,11 @@
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseToken;
+import com.google.firebase.tasks.OnSuccessListener;
 import com.google.gson.Gson;
 import data.RequestData;
 import freemarker.cache.ClassTemplateLoader;
 import freemarker.template.Configuration;
+import presenter.FireManager;
 import presenter.RequestValidator;
 import presenter.SearchWorker;
 import spark.ModelAndView;
@@ -15,7 +19,7 @@ import static spark.Spark.*;
 public class Server {
 
     public void init() throws Exception {
-        port(Integer.valueOf(System.getenv("PORT")));
+        //       port(Integer.valueOf(System.getenv("PORT")));
         FreeMarkerEngine freeMarkerEngine = new FreeMarkerEngine();
         Configuration freeMarkerConfiguration = new Configuration();
         freeMarkerConfiguration.setTemplateLoader(new ClassTemplateLoader(Server.class, "/web/"));
@@ -31,16 +35,17 @@ public class Server {
         post("/", (request, response) -> {
             RequestData requestData = new Gson().fromJson(request.body(), RequestData.class);
             String validationErrors = RequestValidator.validate(requestData);
+            String uid = request.headers("x-u-auth");
             if (validationErrors != null) {
                 return validationErrors;
             }
-            SearchWorker searchWorker = new SearchWorker(requestData);
+            SearchWorker searchWorker = new SearchWorker(requestData, !uid.equals("null") );
             Thread wThread = new Thread(searchWorker);
             wThread.start();
             wThread.join();
+
             return new Gson().toJson(searchWorker.getResult());
         });
-
     }
 
 }

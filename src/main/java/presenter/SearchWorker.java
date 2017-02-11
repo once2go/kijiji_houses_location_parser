@@ -13,11 +13,14 @@ public class SearchWorker implements Runnable {
     private String urlPattern;
     private SearchingZone mSearchingZone;
     private List<FitAddObject> mFitAddObjects = new ArrayList<>();
+    private boolean mIssUser;
 
     private int startPage = 1;
-    private int endPage = 3;
+    private int endPage = 2;
+    private int endUserPage = 10;
 
-    public SearchWorker(RequestData requestData) {
+    public SearchWorker(RequestData requestData, boolean isUser) {
+        mIssUser = isUser;
         String searchTypeQuery;
         String searchToken;
         switch (requestData.getSearchType()) {
@@ -47,7 +50,7 @@ public class SearchWorker implements Runnable {
         final Executor executor = new Executor(mSearchingZone);
         executor.setExecutorProgressListener(result -> mFitAddObjects = result);
         try {
-            new Scanner(urlPattern, result -> executor.executeNewSearch(result)).executeScope(startPage, endPage);
+            new Scanner(urlPattern, result -> executor.executeNewSearch(result)).executeScope(startPage, mIssUser ? endUserPage : endPage);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
