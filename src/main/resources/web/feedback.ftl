@@ -3,10 +3,10 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Leave your feedback please:</h4>
+        <h4 class="modal-title">Please share your feedback:</h4>
       </div>
       <div class="modal-body">
-        <p><textarea rows="10" cols="66" name="text" placeholder="Text whats good & whats wrong..." id="feedback-msg"></textarea></p>
+        <p><textarea rows="10" cols="66" name="text" placeholder="Comments and suggestions ... " id="feedback-msg"></textarea></p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-defalt" data-dismiss="modal">Close</button>

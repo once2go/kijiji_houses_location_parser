@@ -1,11 +1,7 @@
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseToken;
-import com.google.firebase.tasks.OnSuccessListener;
 import com.google.gson.Gson;
 import data.RequestData;
 import freemarker.cache.ClassTemplateLoader;
 import freemarker.template.Configuration;
-import presenter.FireManager;
 import presenter.RequestValidator;
 import presenter.SearchWorker;
 import spark.ModelAndView;

@@ -20,14 +20,14 @@
   	<div class="input-group">
 	  <span class="input-group-addon">From</span> 
 	  <input id="price_from" type="text" class="form-control" value="200" aria-label="Amount (to the nearest dollar)">
-  	  <span class="input-group-addon">c$</span>
+  	  <span class="input-group-addon">CAD</span>
 	</div>
   </div>
   <div class="col-md-6">
   	  	<div class="input-group">
 	  	 <span class="input-group-addon">To</span> 
 	 	 <input id="price_till" type="text" class="form-control" value="750" aria-label="Amount (to the nearest dollar)">
-  	 	 <span class="input-group-addon">c$</span>
+  	 	 <span class="input-group-addon">CAD</span>
 	</div>
   </div>
 </div>

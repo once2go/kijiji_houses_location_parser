@@ -51,6 +51,7 @@ $( document ).ready(function() {
     $("#feedback-send-btn").click(function() {
       sendFeedBack($("#feedback-msg").val())
       $('#fback-modal').modal('hide');
+      $("#feedback-msg").val('');
     });
 });
 
